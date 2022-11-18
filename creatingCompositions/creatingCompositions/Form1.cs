@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,9 @@ namespace creatingCompositions
     public partial class Form1 : Form
     {
         private bool flag = false;
+
+        static string path1 = AppDomain.CurrentDomain.BaseDirectory.ToString();
+        static string str = path1.Remove(path1.Length - 10);
         public Form1()
         {
             InitializeComponent();
@@ -97,7 +102,7 @@ namespace creatingCompositions
 
         private void mTeapot1_Click(object sender, EventArgs e)
         {
-            ClassMemory.centerImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\CenterTeapot1.png";
+            ClassMemory.centerImg = str + "Resources\\CenterTeapot1.png";
         }
 
         void DrawBitmap(string nameFile)
@@ -120,42 +125,51 @@ namespace creatingCompositions
 
         private void Teapot2_Click(object sender, EventArgs e)
         {
-            ClassMemory.leftImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\LeftTeapot1.png";
+            ClassMemory.leftImg = str + "Resources\\LeftTeapot1.png";
         }
 
         private void mTeapot_Click(object sender, EventArgs e)
         {
-            ClassMemory.RightImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\RightTeapot11.png";
+            ClassMemory.RightImg = str + "Resources\\RightTeapot11.png";
         }
 
         private void mVaseCenter_Click(object sender, EventArgs e)
         {
-            ClassMemory.centerImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\CenterVase2.png";
+            ClassMemory.centerImg = str + "Resources\\CenterVase2.png";
         }
 
         private void mVaseLeft_Click(object sender, EventArgs e)
         {
-            ClassMemory.leftImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\LeftVase2.png";
+            ClassMemory.leftImg = str + "Resources\\LeftVase2.png";
         }
 
         private void mVaseRight_Click(object sender, EventArgs e)
         {
-            ClassMemory.RightImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\RightVase2.png";
+            ClassMemory.RightImg = str + "Resources\\RightVase2.png";
         }
 
         private void mCupCenter_Click(object sender, EventArgs e)
         {
-            ClassMemory.centerImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\CenterCup3.png";
+            ClassMemory.centerImg = str + "Resources\\CenterCup3.png";
         }
 
         private void mCupLeft_Click(object sender, EventArgs e)
         {
-            ClassMemory.leftImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\LeftCup3.png";
+            ClassMemory.leftImg = str + "Resources\\LeftCup3.png";
         }
 
         private void mCupRight_Click(object sender, EventArgs e)
         {
-            ClassMemory.RightImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\RightCup3.png";
+            ClassMemory.RightImg = str + "Resources\\RightCup3.png";
+        }
+
+        private string GetExeDirectory()
+        {
+            string codeBase = Assembly.GetExecutingAssembly().CodeBase;
+            UriBuilder uri = new UriBuilder(codeBase);
+            string path = Uri.UnescapeDataString(uri.Path);
+            path = Path.GetDirectoryName(path);
+            return path;
         }
     }
 }
