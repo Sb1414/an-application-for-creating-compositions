@@ -29,10 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.panelUp2 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.предмет1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mVaseCenter = new System.Windows.Forms.ToolStripMenuItem();
+            this.mTeapot1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mCupCenter = new System.Windows.Forms.ToolStripMenuItem();
+            this.предмет2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mVaseLeft = new System.Windows.Forms.ToolStripMenuItem();
+            this.mCupLeft = new System.Windows.Forms.ToolStripMenuItem();
+            this.Teapot2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.предмет3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mVaseRight = new System.Windows.Forms.ToolStripMenuItem();
+            this.mCupRight = new System.Windows.Forms.ToolStripMenuItem();
+            this.mTeapot = new System.Windows.Forms.ToolStripMenuItem();
+            this.фонToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.столToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonRes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btMaximiz = new System.Windows.Forms.Button();
             this.btMinimiz = new System.Windows.Forms.Button();
             this.btClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panelUp2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -47,6 +70,179 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelUp_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelUp_MouseMove);
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 30);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 539);
+            this.splitter1.TabIndex = 1;
+            this.splitter1.TabStop = false;
+            // 
+            // panelUp2
+            // 
+            this.panelUp2.Controls.Add(this.menuStrip1);
+            this.panelUp2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUp2.Location = new System.Drawing.Point(3, 30);
+            this.panelUp2.Name = "panelUp2";
+            this.panelUp2.Size = new System.Drawing.Size(797, 30);
+            this.panelUp2.TabIndex = 3;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.предмет1ToolStripMenuItem,
+            this.предмет2ToolStripMenuItem,
+            this.предмет3ToolStripMenuItem,
+            this.фонToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(797, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // предмет1ToolStripMenuItem
+            // 
+            this.предмет1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mVaseCenter,
+            this.mTeapot1,
+            this.mCupCenter});
+            this.предмет1ToolStripMenuItem.Name = "предмет1ToolStripMenuItem";
+            this.предмет1ToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.предмет1ToolStripMenuItem.Text = "предмет 1";
+            // 
+            // mVaseCenter
+            // 
+            this.mVaseCenter.Name = "mVaseCenter";
+            this.mVaseCenter.Size = new System.Drawing.Size(224, 26);
+            this.mVaseCenter.Text = "ваза";
+            this.mVaseCenter.Click += new System.EventHandler(this.mVaseCenter_Click);
+            // 
+            // mTeapot1
+            // 
+            this.mTeapot1.Name = "mTeapot1";
+            this.mTeapot1.Size = new System.Drawing.Size(224, 26);
+            this.mTeapot1.Text = "чайник";
+            this.mTeapot1.Click += new System.EventHandler(this.mTeapot1_Click);
+            // 
+            // mCupCenter
+            // 
+            this.mCupCenter.Name = "mCupCenter";
+            this.mCupCenter.Size = new System.Drawing.Size(224, 26);
+            this.mCupCenter.Text = "кружка";
+            this.mCupCenter.Click += new System.EventHandler(this.mCupCenter_Click);
+            // 
+            // предмет2ToolStripMenuItem
+            // 
+            this.предмет2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mVaseLeft,
+            this.mCupLeft,
+            this.Teapot2});
+            this.предмет2ToolStripMenuItem.Name = "предмет2ToolStripMenuItem";
+            this.предмет2ToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.предмет2ToolStripMenuItem.Text = "предмет 2";
+            // 
+            // mVaseLeft
+            // 
+            this.mVaseLeft.Name = "mVaseLeft";
+            this.mVaseLeft.Size = new System.Drawing.Size(224, 26);
+            this.mVaseLeft.Text = "ваза";
+            this.mVaseLeft.Click += new System.EventHandler(this.mVaseLeft_Click);
+            // 
+            // mCupLeft
+            // 
+            this.mCupLeft.Name = "mCupLeft";
+            this.mCupLeft.Size = new System.Drawing.Size(224, 26);
+            this.mCupLeft.Text = "кружка";
+            this.mCupLeft.Click += new System.EventHandler(this.mCupLeft_Click);
+            // 
+            // Teapot2
+            // 
+            this.Teapot2.Name = "Teapot2";
+            this.Teapot2.Size = new System.Drawing.Size(224, 26);
+            this.Teapot2.Text = "чайник";
+            this.Teapot2.Click += new System.EventHandler(this.Teapot2_Click);
+            // 
+            // предмет3ToolStripMenuItem
+            // 
+            this.предмет3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mVaseRight,
+            this.mCupRight,
+            this.mTeapot});
+            this.предмет3ToolStripMenuItem.Name = "предмет3ToolStripMenuItem";
+            this.предмет3ToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.предмет3ToolStripMenuItem.Text = "предмет 3";
+            // 
+            // mVaseRight
+            // 
+            this.mVaseRight.Name = "mVaseRight";
+            this.mVaseRight.Size = new System.Drawing.Size(224, 26);
+            this.mVaseRight.Text = "ваза";
+            this.mVaseRight.Click += new System.EventHandler(this.mVaseRight_Click);
+            // 
+            // mCupRight
+            // 
+            this.mCupRight.Name = "mCupRight";
+            this.mCupRight.Size = new System.Drawing.Size(224, 26);
+            this.mCupRight.Text = "кружка";
+            this.mCupRight.Click += new System.EventHandler(this.mCupRight_Click);
+            // 
+            // mTeapot
+            // 
+            this.mTeapot.Name = "mTeapot";
+            this.mTeapot.Size = new System.Drawing.Size(224, 26);
+            this.mTeapot.Text = "чайник";
+            this.mTeapot.Click += new System.EventHandler(this.mTeapot_Click);
+            // 
+            // фонToolStripMenuItem
+            // 
+            this.фонToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.столToolStripMenuItem});
+            this.фонToolStripMenuItem.Name = "фонToolStripMenuItem";
+            this.фонToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.фонToolStripMenuItem.Text = "фон";
+            // 
+            // столToolStripMenuItem
+            // 
+            this.столToolStripMenuItem.Name = "столToolStripMenuItem";
+            this.столToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.столToolStripMenuItem.Text = "стол";
+            // 
+            // buttonRes
+            // 
+            this.buttonRes.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonRes.FlatAppearance.BorderSize = 0;
+            this.buttonRes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.buttonRes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.buttonRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRes.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonRes.Location = new System.Drawing.Point(323, 474);
+            this.buttonRes.Name = "buttonRes";
+            this.buttonRes.Size = new System.Drawing.Size(168, 55);
+            this.buttonRes.TabIndex = 5;
+            this.buttonRes.Text = "Res";
+            this.buttonRes.UseVisualStyleBackColor = false;
+            this.buttonRes.Click += new System.EventHandler(this.buttonRes_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(30, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(742, 22);
+            this.label1.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(30, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(742, 355);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // btMaximiz
             // 
@@ -104,11 +300,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 569);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonRes);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panelUp2);
+            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
+            this.panelUp2.ResumeLayout(false);
+            this.panelUp2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -119,6 +326,26 @@
         private System.Windows.Forms.Button btClose;
         private System.Windows.Forms.Button btMaximiz;
         private System.Windows.Forms.Button btMinimiz;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Panel panelUp2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem предмет1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mVaseCenter;
+        private System.Windows.Forms.ToolStripMenuItem mTeapot1;
+        private System.Windows.Forms.ToolStripMenuItem mCupCenter;
+        private System.Windows.Forms.ToolStripMenuItem предмет2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mVaseLeft;
+        private System.Windows.Forms.ToolStripMenuItem mCupLeft;
+        private System.Windows.Forms.ToolStripMenuItem Teapot2;
+        private System.Windows.Forms.ToolStripMenuItem предмет3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mVaseRight;
+        private System.Windows.Forms.ToolStripMenuItem mCupRight;
+        private System.Windows.Forms.ToolStripMenuItem mTeapot;
+        private System.Windows.Forms.ToolStripMenuItem фонToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonRes;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassMemory.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +89,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-macos-полный-экран-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterTeapot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftTeapot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightTeapot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterVase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftVase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightVase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightTeapot11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterCup3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftCup3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightCup3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using creatingCompositions.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using Image = System.Drawing.Image;
 
 namespace creatingCompositions
 {
@@ -20,7 +23,8 @@ namespace creatingCompositions
 
         private void btClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+            this.Close();
         }
 
         Point lastPoint;
@@ -51,6 +55,107 @@ namespace creatingCompositions
             else
                 WindowState = FormWindowState.Normal;
             flag = !flag;
+        }
+
+        private void buttonRes_Click(object sender, EventArgs e)
+        {
+            label1.Text = "";
+            string imgC1 = ClassMemory.centerImg;
+            string imgL1 = ClassMemory.leftImg;
+            string imgR1 = ClassMemory.RightImg;
+
+            if (imgC1 == "")
+            {
+                label1.Text = "Выберите 1 изображение!";
+            } else
+            {
+                label1.Text = "";
+                Bitmap result = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+
+                using (Graphics graphics = Graphics.FromImage(result))
+                {
+                    graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                    graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                    
+                    graphics.DrawImage(Image.FromFile(imgC1), 0, 0, result.Width, result.Height);
+                    if (imgL1 != "")
+                    {
+                        Image img = Image.FromFile(imgL1);
+                        graphics.DrawImage(img, 0, 0, result.Width, result.Height);
+                    }
+                    if (imgR1 != "")
+                    {
+                        Image img3 = Image.FromFile(imgR1);
+                        graphics.DrawImage(img3, 0, 0, result.Width, result.Height);
+                    }
+                }
+                pictureBox1.Image = result;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
+
+        private void mTeapot1_Click(object sender, EventArgs e)
+        {
+            ClassMemory.centerImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\CenterTeapot1.png";
+        }
+
+        void DrawBitmap(string nameFile)
+        {
+            Bitmap result = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+
+            //use a graphics object to draw the resized image into the bitmap
+            using (Graphics graphics = Graphics.FromImage(result))
+            {
+                //set the resize quality modes to high quality
+                graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                //draw the images into the target bitmap
+                graphics.DrawImage(Image.FromFile(nameFile), 0, 0, result.Width, result.Height);
+            }
+            pictureBox1.Image = result;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+        }
+
+        private void Teapot2_Click(object sender, EventArgs e)
+        {
+            ClassMemory.leftImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\LeftTeapot1.png";
+        }
+
+        private void mTeapot_Click(object sender, EventArgs e)
+        {
+            ClassMemory.RightImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\RightTeapot11.png";
+        }
+
+        private void mVaseCenter_Click(object sender, EventArgs e)
+        {
+            ClassMemory.centerImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\CenterVase2.png";
+        }
+
+        private void mVaseLeft_Click(object sender, EventArgs e)
+        {
+            ClassMemory.leftImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\LeftVase2.png";
+        }
+
+        private void mVaseRight_Click(object sender, EventArgs e)
+        {
+            ClassMemory.RightImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\RightVase2.png";
+        }
+
+        private void mCupCenter_Click(object sender, EventArgs e)
+        {
+            ClassMemory.centerImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\CenterCup3.png";
+        }
+
+        private void mCupLeft_Click(object sender, EventArgs e)
+        {
+            ClassMemory.leftImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\LeftCup3.png";
+        }
+
+        private void mCupRight_Click(object sender, EventArgs e)
+        {
+            ClassMemory.RightImg = "C:\\Users\\Сабина\\source\\repos\\creatingCompositions\\creatingCompositions\\Resources\\RightCup3.png";
         }
     }
 }

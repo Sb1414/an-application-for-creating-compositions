@@ -63,6 +63,36 @@ namespace creatingCompositions.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CenterCup3 {
+            get {
+                object obj = ResourceManager.GetObject("CenterCup3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CenterTeapot1 {
+            get {
+                object obj = ResourceManager.GetObject("CenterTeapot1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CenterVase2 {
+            get {
+                object obj = ResourceManager.GetObject("CenterVase2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_macos_закрыть_20 {
             get {
                 object obj = ResourceManager.GetObject("icons8-macos-закрыть-20", resourceCulture);
@@ -86,6 +116,76 @@ namespace creatingCompositions.Properties {
         internal static System.Drawing.Bitmap icons8_macos_свернуть_20 {
             get {
                 object obj = ResourceManager.GetObject("icons8-macos-свернуть-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeftCup3 {
+            get {
+                object obj = ResourceManager.GetObject("LeftCup3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeftTeapot1 {
+            get {
+                object obj = ResourceManager.GetObject("LeftTeapot1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LeftVase2 {
+            get {
+                object obj = ResourceManager.GetObject("LeftVase2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RightCup3 {
+            get {
+                object obj = ResourceManager.GetObject("RightCup3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RightTeapot1 {
+            get {
+                object obj = ResourceManager.GetObject("RightTeapot1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RightTeapot11 {
+            get {
+                object obj = ResourceManager.GetObject("RightTeapot11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RightVase2 {
+            get {
+                object obj = ResourceManager.GetObject("RightVase2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
