@@ -1,0 +1,11 @@
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\bin\Debug\creatingCompositions.exe.config
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\bin\Debug\creatingCompositions.exe
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\bin\Debug\creatingCompositions.pdb
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.csproj.AssemblyReference.cache
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.csproj.SuggestedBindingRedirects.cache
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.Form1.resources
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.Properties.Resources.resources
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.csproj.GenerateResource.cache
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.csproj.CoreCompileInputs.cache
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.exe
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.pdb
