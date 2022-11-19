@@ -11,5 +11,7 @@ namespace creatingCompositions
         public static string centerImg = "";
         public static string leftImg = "";
         public static string RightImg = "";
+        public static string back = "";
+
     }
 }

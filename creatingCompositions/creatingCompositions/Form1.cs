@@ -82,6 +82,13 @@ namespace creatingCompositions
                     graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
                     graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                     graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+
+                    if (ClassMemory.back != "")
+                    {
+                        string b = ClassMemory.back;
+                        Image b1 = Image.FromFile(b);
+                        graphics.DrawImage(b1, 0, 0, result.Width, result.Height);
+                    }
                     
                     graphics.DrawImage(Image.FromFile(imgC1), 0, 0, result.Width, result.Height);
                     if (imgL1 != "")
@@ -185,6 +192,16 @@ namespace creatingCompositions
         private void mPlateR_Click(object sender, EventArgs e)
         {
             ClassMemory.RightImg = str + "Resources\\RightPlate4.png";
+        }
+
+        private void столToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClassMemory.back = str + "Resources\\table.png";
+        }
+
+        private void mNo_Click(object sender, EventArgs e)
+        {
+            ClassMemory.back = "";
         }
     }
 }

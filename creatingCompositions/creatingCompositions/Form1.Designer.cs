@@ -55,6 +55,7 @@
             this.buttonRes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mNo = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panelUp2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -176,7 +177,7 @@
             // 
             this.mVaseCenter.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mVaseCenter.Name = "mVaseCenter";
-            this.mVaseCenter.Size = new System.Drawing.Size(224, 26);
+            this.mVaseCenter.Size = new System.Drawing.Size(146, 26);
             this.mVaseCenter.Text = "ваза";
             this.mVaseCenter.Click += new System.EventHandler(this.mVaseCenter_Click);
             // 
@@ -184,7 +185,7 @@
             // 
             this.mTeapot1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mTeapot1.Name = "mTeapot1";
-            this.mTeapot1.Size = new System.Drawing.Size(224, 26);
+            this.mTeapot1.Size = new System.Drawing.Size(146, 26);
             this.mTeapot1.Text = "чайник";
             this.mTeapot1.Click += new System.EventHandler(this.mTeapot1_Click);
             // 
@@ -192,7 +193,7 @@
             // 
             this.mCupCenter.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mCupCenter.Name = "mCupCenter";
-            this.mCupCenter.Size = new System.Drawing.Size(224, 26);
+            this.mCupCenter.Size = new System.Drawing.Size(146, 26);
             this.mCupCenter.Text = "кружка";
             this.mCupCenter.Click += new System.EventHandler(this.mCupCenter_Click);
             // 
@@ -200,7 +201,7 @@
             // 
             this.mPlateC.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mPlateC.Name = "mPlateC";
-            this.mPlateC.Size = new System.Drawing.Size(224, 26);
+            this.mPlateC.Size = new System.Drawing.Size(146, 26);
             this.mPlateC.Text = "тарелка";
             this.mPlateC.Click += new System.EventHandler(this.mPlateC_Click);
             // 
@@ -219,7 +220,7 @@
             // 
             this.mVaseLeft.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mVaseLeft.Name = "mVaseLeft";
-            this.mVaseLeft.Size = new System.Drawing.Size(224, 26);
+            this.mVaseLeft.Size = new System.Drawing.Size(146, 26);
             this.mVaseLeft.Text = "ваза";
             this.mVaseLeft.Click += new System.EventHandler(this.mVaseLeft_Click);
             // 
@@ -227,7 +228,7 @@
             // 
             this.mCupLeft.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mCupLeft.Name = "mCupLeft";
-            this.mCupLeft.Size = new System.Drawing.Size(224, 26);
+            this.mCupLeft.Size = new System.Drawing.Size(146, 26);
             this.mCupLeft.Text = "кружка";
             this.mCupLeft.Click += new System.EventHandler(this.mCupLeft_Click);
             // 
@@ -235,7 +236,7 @@
             // 
             this.Teapot2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Teapot2.Name = "Teapot2";
-            this.Teapot2.Size = new System.Drawing.Size(224, 26);
+            this.Teapot2.Size = new System.Drawing.Size(146, 26);
             this.Teapot2.Text = "чайник";
             this.Teapot2.Click += new System.EventHandler(this.Teapot2_Click);
             // 
@@ -243,7 +244,7 @@
             // 
             this.mPlateL.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mPlateL.Name = "mPlateL";
-            this.mPlateL.Size = new System.Drawing.Size(224, 26);
+            this.mPlateL.Size = new System.Drawing.Size(146, 26);
             this.mPlateL.Text = "тарелка";
             this.mPlateL.Click += new System.EventHandler(this.mPlateL_Click);
             // 
@@ -262,7 +263,7 @@
             // 
             this.mVaseRight.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mVaseRight.Name = "mVaseRight";
-            this.mVaseRight.Size = new System.Drawing.Size(224, 26);
+            this.mVaseRight.Size = new System.Drawing.Size(146, 26);
             this.mVaseRight.Text = "ваза";
             this.mVaseRight.Click += new System.EventHandler(this.mVaseRight_Click);
             // 
@@ -270,7 +271,7 @@
             // 
             this.mCupRight.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mCupRight.Name = "mCupRight";
-            this.mCupRight.Size = new System.Drawing.Size(224, 26);
+            this.mCupRight.Size = new System.Drawing.Size(146, 26);
             this.mCupRight.Text = "кружка";
             this.mCupRight.Click += new System.EventHandler(this.mCupRight_Click);
             // 
@@ -278,7 +279,7 @@
             // 
             this.mTeapot.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mTeapot.Name = "mTeapot";
-            this.mTeapot.Size = new System.Drawing.Size(224, 26);
+            this.mTeapot.Size = new System.Drawing.Size(146, 26);
             this.mTeapot.Text = "чайник";
             this.mTeapot.Click += new System.EventHandler(this.mTeapot_Click);
             // 
@@ -286,14 +287,15 @@
             // 
             this.mPlateR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.mPlateR.Name = "mPlateR";
-            this.mPlateR.Size = new System.Drawing.Size(224, 26);
+            this.mPlateR.Size = new System.Drawing.Size(146, 26);
             this.mPlateR.Text = "тарелка";
             this.mPlateR.Click += new System.EventHandler(this.mPlateR_Click);
             // 
             // фонToolStripMenuItem
             // 
             this.фонToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.столToolStripMenuItem});
+            this.столToolStripMenuItem,
+            this.mNo});
             this.фонToolStripMenuItem.Name = "фонToolStripMenuItem";
             this.фонToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.фонToolStripMenuItem.Text = "фон";
@@ -304,6 +306,7 @@
             this.столToolStripMenuItem.Name = "столToolStripMenuItem";
             this.столToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.столToolStripMenuItem.Text = "стол";
+            this.столToolStripMenuItem.Click += new System.EventHandler(this.столToolStripMenuItem_Click);
             // 
             // buttonRes
             // 
@@ -341,6 +344,14 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // mNo
+            // 
+            this.mNo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.mNo.Name = "mNo";
+            this.mNo.Size = new System.Drawing.Size(224, 26);
+            this.mNo.Text = "нет";
+            this.mNo.Click += new System.EventHandler(this.mNo_Click);
             // 
             // Form1
             // 
@@ -399,6 +410,7 @@
         private System.Windows.Forms.ToolStripMenuItem mPlateC;
         private System.Windows.Forms.ToolStripMenuItem mPlateL;
         private System.Windows.Forms.ToolStripMenuItem mPlateR;
+        private System.Windows.Forms.ToolStripMenuItem mNo;
     }
 }
 
