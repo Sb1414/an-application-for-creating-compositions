@@ -171,5 +171,20 @@ namespace creatingCompositions
             path = Path.GetDirectoryName(path);
             return path;
         }
+
+        private void mPlateC_Click(object sender, EventArgs e)
+        {
+            ClassMemory.centerImg = str + "Resources\\CenterPlate4.png";
+        }
+
+        private void mPlateL_Click(object sender, EventArgs e)
+        {
+            ClassMemory.leftImg = str + "Resources\\LeftPlate4.png";
+        }
+
+        private void mPlateR_Click(object sender, EventArgs e)
+        {
+            ClassMemory.RightImg = str + "Resources\\RightPlate4.png";
+        }
     }
 }

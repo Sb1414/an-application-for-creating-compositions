@@ -63,9 +63,49 @@ namespace creatingCompositions.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back {
+            get {
+                object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back1 {
+            get {
+                object obj = ResourceManager.GetObject("back1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back2 {
+            get {
+                object obj = ResourceManager.GetObject("back2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CenterCup3 {
             get {
                 object obj = ResourceManager.GetObject("CenterCup3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CenterPlate4 {
+            get {
+                object obj = ResourceManager.GetObject("CenterPlate4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +173,16 @@ namespace creatingCompositions.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LeftPlate4 {
+            get {
+                object obj = ResourceManager.GetObject("LeftPlate4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LeftTeapot1 {
             get {
                 object obj = ResourceManager.GetObject("LeftTeapot1", resourceCulture);
@@ -153,9 +203,29 @@ namespace creatingCompositions.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap panel {
+            get {
+                object obj = ResourceManager.GetObject("panel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RightCup3 {
             get {
                 object obj = ResourceManager.GetObject("RightCup3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RightPlate4 {
+            get {
+                object obj = ResourceManager.GetObject("RightPlate4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -118,29 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LeftVase2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LeftVase2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LeftTeapot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LeftTeapot1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RightVase2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RightVase2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-macos-закрыть-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-macos-закрыть-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RightTeapot11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RightTeapot11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-macos-полный-экран-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-macos-полный-экран-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LeftVase2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeftVase2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RightTeapot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RightTeapot1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CenterTeapot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CenterTeapot1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RightCup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightCup3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-macos-свернуть-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-macos-свернуть-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,13 +136,46 @@
   <data name="CenterVase2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CenterVase2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LeftPlate4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeftPlate4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CenterPlate4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CenterPlate4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CenterTeapot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CenterTeapot1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CenterCup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CenterCup3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightVase2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightVase2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LeftCup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LeftCup3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RightCup3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RightCup3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RightPlate4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightPlate4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-macos-полный-экран-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-macos-полный-экран-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LeftTeapot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeftTeapot1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RightTeapot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightTeapot1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -120,5 +120,26 @@
   <ItemGroup>
     <None Include="Resources\RightCup3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterPlate4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftPlate4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightPlate4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
