@@ -52,10 +52,13 @@
             this.mPlateR = new System.Windows.Forms.ToolStripMenuItem();
             this.фонToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.столToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mNo = new System.Windows.Forms.ToolStripMenuItem();
+            this.цветокорToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mSelectColor = new System.Windows.Forms.ToolStripMenuItem();
+            this.mAddColor = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonRes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.mNo = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panelUp2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -154,7 +157,8 @@
             this.предмет1ToolStripMenuItem,
             this.предмет2ToolStripMenuItem,
             this.предмет3ToolStripMenuItem,
-            this.фонToolStripMenuItem});
+            this.фонToolStripMenuItem,
+            this.цветокорToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(797, 28);
@@ -304,17 +308,49 @@
             // 
             this.столToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.столToolStripMenuItem.Name = "столToolStripMenuItem";
-            this.столToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.столToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
             this.столToolStripMenuItem.Text = "стол";
             this.столToolStripMenuItem.Click += new System.EventHandler(this.столToolStripMenuItem_Click);
+            // 
+            // mNo
+            // 
+            this.mNo.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.mNo.Name = "mNo";
+            this.mNo.Size = new System.Drawing.Size(122, 26);
+            this.mNo.Text = "нет";
+            this.mNo.Click += new System.EventHandler(this.mNo_Click);
+            // 
+            // цветокорToolStripMenuItem
+            // 
+            this.цветокорToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mSelectColor,
+            this.mAddColor});
+            this.цветокорToolStripMenuItem.Name = "цветокорToolStripMenuItem";
+            this.цветокорToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.цветокорToolStripMenuItem.Text = "цветокор";
+            this.цветокорToolStripMenuItem.Click += new System.EventHandler(this.цветокорToolStripMenuItem_Click);
+            // 
+            // mSelectColor
+            // 
+            this.mSelectColor.Name = "mSelectColor";
+            this.mSelectColor.Size = new System.Drawing.Size(224, 26);
+            this.mSelectColor.Text = "выбрать цвет";
+            this.mSelectColor.Click += new System.EventHandler(this.mSelectColor_Click);
+            // 
+            // mAddColor
+            // 
+            this.mAddColor.Name = "mAddColor";
+            this.mAddColor.Size = new System.Drawing.Size(224, 26);
+            this.mAddColor.Text = "ч/б";
+            this.mAddColor.Click += new System.EventHandler(this.mAddColor_Click);
             // 
             // buttonRes
             // 
             this.buttonRes.BackColor = System.Drawing.Color.Transparent;
             this.buttonRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonRes.FlatAppearance.BorderSize = 0;
-            this.buttonRes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.buttonRes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.buttonRes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.buttonRes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
             this.buttonRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRes.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRes.Location = new System.Drawing.Point(323, 474);
@@ -328,7 +364,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Arial Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Location = new System.Drawing.Point(30, 68);
             this.label1.Name = "label1";
@@ -344,14 +380,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // mNo
-            // 
-            this.mNo.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.mNo.Name = "mNo";
-            this.mNo.Size = new System.Drawing.Size(224, 26);
-            this.mNo.Text = "нет";
-            this.mNo.Click += new System.EventHandler(this.mNo_Click);
             // 
             // Form1
             // 
@@ -411,6 +439,9 @@
         private System.Windows.Forms.ToolStripMenuItem mPlateL;
         private System.Windows.Forms.ToolStripMenuItem mPlateR;
         private System.Windows.Forms.ToolStripMenuItem mNo;
+        private System.Windows.Forms.ToolStripMenuItem цветокорToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mSelectColor;
+        private System.Windows.Forms.ToolStripMenuItem mAddColor;
     }
 }
 

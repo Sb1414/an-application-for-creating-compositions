@@ -9,3 +9,4 @@ C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj
 C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.csproj.CoreCompileInputs.cache
 C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.exe
 C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.pdb
+C:\Users\Сабина\source\repos\creatingCompositions\creatingCompositions\obj\Debug\creatingCompositions.Form2.resources

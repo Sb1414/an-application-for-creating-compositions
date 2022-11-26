@@ -203,5 +203,75 @@ namespace creatingCompositions
         {
             ClassMemory.back = "";
         }
+
+        private void цветокорToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void mSelectColor_Click(object sender, EventArgs e)
+        {
+            Bitmap input2 = new Bitmap(pictureBox1.Image);
+
+            for (int j = 0; j < input2.Height; j++)
+            {
+                for (int i = 0; i < input2.Width; i++)
+                {
+                    UInt32 pixel = (UInt32)(input2.GetPixel(i, j).ToArgb());
+
+                    Class1.Red = (float)((pixel & 0x00FF0000) >> 16);
+                    Class1.Green = (float)((pixel & 0x0000FF00) >> 8);
+                    Class1.Blue = (float)((pixel & 0x000000FF));
+                }
+            }
+            MessageBox.Show(Class1.Red.ToString(), Class1.Green.ToString());
+
+            Form2 f = new Form2();
+            f.Show();
+        }
+
+        private void mAddColor_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                string imgC1 = str + "Resources\\backFont.png";
+                Bitmap result = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                Bitmap input1 = new Bitmap(pictureBox1.Image);
+                using (Graphics graphics = Graphics.FromImage(result))
+                {
+                    graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                    graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                    graphics.DrawImage(Image.FromFile(imgC1), 0, 0, result.Width, result.Height);
+                    graphics.DrawImage(input1, 0, 0, result.Width, result.Height);
+                }
+                pictureBox1.Image = result;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+
+                Bitmap input = new Bitmap(pictureBox1.Image);
+
+                Bitmap output = new Bitmap(pictureBox1.Image);
+
+                for (int j = 0; j < input.Height; j++)
+                {
+                    for (int i = 0; i < input.Width; i++)
+                    {
+                        UInt32 pixel = (UInt32)(input.GetPixel(i, j).ToArgb());
+
+                        float R = (float)((pixel & 0x00FF0000) >> 16);
+                        float G = (float)((pixel & 0x0000FF00) >> 8);
+                        float B = (float)((pixel & 0x000000FF));
+
+                        R = G = B = (R + G + B) / 3.0f;
+
+                        UInt32 newPixel = 0xFF000000 | ((UInt32)R << 16) | ((UInt32)G << 8) | ((UInt32)B);
+
+                        output.SetPixel(i, j, Color.FromArgb((int)newPixel));
+                    }
+
+                pictureBox1.Image = output;
+                }
+            }
+        }
     }
 }
